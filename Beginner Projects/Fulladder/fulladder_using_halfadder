@@ -1,0 +1,15 @@
+module fulladder_using_halfadder(s,co,a,b,cin);
+input a,b,cin;
+output s,co;
+wire t,x,k;
+half v1(t,x,a,b);
+half v2(s,k,cin,t);
+or(co,x,k);
+endmodule
+
+module half(s,co,a,b);
+input a,b;
+output s,co;
+assign  s=a^b;
+assign  c0=a&b;
+endmodule
