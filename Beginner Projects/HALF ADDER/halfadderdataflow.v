@@ -1,4 +1,4 @@
-module halfadderdataflow_ (a,b,s,c);
+module halfadderdataflow_ (s,c,a,b);
   input a,b;
   output s,c;
      assign s=a^b;
